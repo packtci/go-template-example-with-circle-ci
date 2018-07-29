@@ -1,11 +1,9 @@
 version: 2
-
 jobs:
   build:
+    working_directory: /go/src/github.com/packtci/go-template-example-with-circle-ci
     docker:
       - image: circleci/golang:1.9
-    working_directory: /go/src/github.com/packtci/go-template-example-with-circle-ci
-
     steps:
       - checkout
       - run:
@@ -14,3 +12,11 @@ jobs:
       - run:
           name: "Run Unit Tests"
           command: go test
+  integration:
+    docker:
+      - image: circleci/node:8.11.3-stretch-browsers
+    steps:
+      - checkout
+      - run:
+          name: "Run Integration Tests"
+          command: npm test

@@ -1,0 +1,23 @@
+{
+  "name": "go-template-example-with-circle-ci",
+  "version": "1.0.0",
+  "description": "[![CircleCI](https://circleci.com/gh/packtci/go-template-example-with-circle-ci.svg?style=svg)](https://circleci.com/gh/packtci/go-template-example-with-circle-ci)",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/packtci/go-template-example-with-circle-ci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/packtci/go-template-example-with-circle-ci/issues"
+  },
+  "homepage": "https://github.com/packtci/go-template-example-with-circle-ci#readme",
+  "devDependencies": {
+    "cypress": "^3.0.2"
+  }
+}
