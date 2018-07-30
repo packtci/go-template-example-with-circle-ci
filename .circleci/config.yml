@@ -14,9 +14,20 @@ jobs:
           command: go test
   integration:
     docker:
-      - image: circleci/node:8.11.3-stretch-browsers
+      - image: cypress/base:8
+        environment:
+          ## this enables colors in the output
+          TERM: xterm
     steps:
       - checkout
-      - run:
+      - run: npm install
+      - run: 
           name: "Run Integration Tests"
           command: npm test
+
+workflows:
+  version: 2
+  build_and_integration:
+    jobs:
+      - build
+      - integration

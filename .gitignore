@@ -13,3 +13,6 @@
 
 # Ignore node modules
 node_modules/
+
+# Cypress videos
+cypress/videos

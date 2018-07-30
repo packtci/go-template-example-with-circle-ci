@@ -4,7 +4,7 @@
   "description": "[![CircleCI](https://circleci.com/gh/packtci/go-template-example-with-circle-ci.svg?style=svg)](https://circleci.com/gh/packtci/go-template-example-with-circle-ci)",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
