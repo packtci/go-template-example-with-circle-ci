@@ -5,3 +5,5 @@
 A repository looking at using the template package in Golang. 
 
 This repository uses Circle CI for continuous Integration.
+
+This repository is built with love.
